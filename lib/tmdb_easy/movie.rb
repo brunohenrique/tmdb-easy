@@ -1,5 +1,5 @@
-module TmdbEasy
-  class TmdbMovie < TmdbBase
+module TmdbEasy  
+  class Movie < Base
     def movie_search(keyword, lang = "en", response = "json")
       method_request = @@api_url + "Movie.search/#{lang}/#{response}/#{self.api_key}/#{keyword}"
 

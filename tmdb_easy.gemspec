@@ -1,16 +1,23 @@
+# -*- encoding: utf-8 -*-
+$:.push File.expand_path("../lib", __FILE__)
+require "tmdb_easy/version"
+
 Gem::Specification.new do |s|
-  s.name = %q{tmdb-easy}
-  s.version = "0.1.0"
+  s.name        = "tmdb_easy"
+  s.version     = TmdbEasy::VERSION
+  s.date        = %q{2011-11-28}
+  s.authors     = ["Bruno Henrique - Garu"]
+  s.email       = ["squall.bruno@gmail.com"]
+  s.homepage    = "https://github.com/brunohenrique/tmdb_easy"
+  s.summary     = %q{TMDB API made easy}
+  s.description = %q{Ruby bindings to TMDB API}
 
+  s.rubyforge_project = %q{tmdb_easy}
 
-  s.required_ruby_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Bruno Henrique - Garu"]
-  s.date = %q{2011-11-28}
-  s.description = %q{Gem }
-  s.summary = %q{Gem}
-  s.email = ["squall.bruno@gmail.com"]
-  s.rubygems_version = %q{0.1.0}
-  s.rubyforge_project = %q{tmdb-easy}
+  s.files         = `git ls-files`.split("\n")
+  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
-  s.files = Dir["{lib/**/*.rb, *.gemspec}"]
+
+  s.add_development_dependency('rake')
 end

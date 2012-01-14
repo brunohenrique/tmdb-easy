@@ -1,4 +1,9 @@
+Manifest
+pkg
+Gemfile.lock
 *.swp
 **/*.swp
 *.gem
 **/*.gem
+*~
+.rvmrc
