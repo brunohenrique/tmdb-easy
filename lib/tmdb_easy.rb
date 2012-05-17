@@ -1,12 +1,21 @@
+require 'rubygems'
+require 'bundler'
+
+Bundler.require
+
 require 'net/http'
 require 'uri'
-require 'json'
 require "rexml/document"
 
-require_files = []
-require_files.concat Dir[File.join(File.dirname(__FILE__), 'tmdb_easy', '*.rb')].reverse
+#Load files in the correct order, not in alphabetical natural order. :)
+required_files = ['base.rb',
+                  'auth.rb',
+                  'media.rb',
+                  'misc.rb',
+                  'movie.rb',
+                  'people.rb']
 
-require_files.each do |file|
-  require File.expand_path(file)
+required_files.each do |file|
+  require File.expand_path(File.join(File.dirname(__FILE__), 'tmdb_easy', file))
 end
 
