@@ -1,4 +1,4 @@
-require_relative '../spec_helper'
+require_relative '../../spec_helper'
 
 describe TmdbEasy::Base do
   before { described_class.key 'api_key'}
