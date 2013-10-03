@@ -1,7 +1,7 @@
 require_relative '../../spec_helper'
 
 describe TmdbEasy::Movie do
-  before { TmdbEasy::Base.key api_key }
+  before { TmdbEasy::Base.api_key tmdb_api_key }
 
   it 'has a defined endpoint' do
     expect(described_class.endpoint).to be_eql 'movie'
