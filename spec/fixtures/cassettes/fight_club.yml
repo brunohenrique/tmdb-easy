@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/movie/550?api_key=50abc7aa03af3809839b4a09deb279c8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=86402
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 03 Oct 2013 03:15:13 GMT
+      Etag:
+      - '"9d160ee7cecd4909e2db9d95a431c9f7"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Memc:
+      - HIT
+      X-Memc-Age:
+      - '38188'
+      X-Memc-Expires:
+      - '48214'
+      X-Memc-Key:
+      - f5d8d6d123f674ea3be4bd53fba9acb2
+      X-Varnish:
+      - '1152569129'
+      X-Varnish-Sid:
+      - tm-v-p-1200
+      Content-Length:
+      - '1202'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"adult":false,"backdrop_path":"/8uO0gUM8aNqYLs1OsTBQiXu0fEv.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":28,"name":"Action"},{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"}],"homepage":"","id":550,"imdb_id":"tt0137523","original_title":"Fight
+        Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
+        channel primal male aggression into a shocking new form of therapy. Their
+        concept catches on, with underground \"fight clubs\" forming in every town,
+        until an eccentric gets in the way and ignites an out-of-control spiral toward
+        oblivion.","popularity":11.9189624554389,"poster_path":"/2lECpi35Hnbpa4y46JX0aY3AWTy.jpg","production_companies":[{"name":"20th
+        Century Fox","id":25},{"name":"Fox 2000 Pictures","id":711},{"name":"Regency
+        Enterprises","id":508}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
+        States of America"}],"release_date":"1999-10-14","revenue":100853753,"runtime":139,"spoken_languages":[{"iso_639_1":"en","name":"English"}],"status":"Released","tagline":"How
+        much can you know about yourself if you''ve never been in a fight?","title":"Fight
+        Club","vote_average":7.5,"vote_count":2612}'
+    http_version: 
+  recorded_at: Thu, 03 Oct 2013 03:15:13 GMT
+recorded_with: VCR 2.6.0
