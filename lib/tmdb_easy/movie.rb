@@ -1,7 +1,5 @@
 module TmdbEasy
   class Movie
-    @@endpoint = 'movie'
-
     attr_reader :attributes
 
     def initialize attributes
@@ -17,11 +15,11 @@ module TmdbEasy
     end
 
     def self.endpoint
-      @@endpoint
+      @@endpoint ||= name.split('::').last.downcase
     end
 
     def self.find id
-      attributes = Base.fetch id, @@endpoint
+      attributes = Base.fetch id, endpoint
       new attributes
     end
   end
