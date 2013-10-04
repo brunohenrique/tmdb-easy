@@ -2,7 +2,7 @@ module TmdbEasy
   class Movie
     @@endpoint = 'movie'
 
-    attr_accessor :attributes
+    attr_reader :attributes
 
     def initialize attributes
       @attributes = attributes
