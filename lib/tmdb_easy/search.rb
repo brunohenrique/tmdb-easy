@@ -1,5 +1,5 @@
 module TmdbEasy
-  class Movie
+  class Search
     attr_reader :attributes
 
     def initialize attributes
@@ -14,13 +14,9 @@ module TmdbEasy
       @@endpoint ||= name.split('::').last.downcase
     end
 
-    def self.find id
-      attributes = Base.fetch endpoint, resource: id
+    def self.fetch terms, resource_endpoint
+      attributes = Base.fetch "#{endpoint}/#{resource_endpoint}", query: terms
       new attributes
-    end
-
-    def self.search terms
-      Search.fetch terms, endpoint
     end
   end
 end

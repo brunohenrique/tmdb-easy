@@ -14,8 +14,19 @@ module TmdbEasy
       self.config[:api_key] = api_key
     end
 
-    def self.fetch resource, endpoint
-      get "/#{endpoint}/#{resource}", query: config
+    def self.fetch endpoint, options = {}
+      resource = options.delete :resource
+      params = config.merge(options)
+
+      get "/#{mount_endpoint(endpoint, resource)}", query: params
+    end
+
+    private
+
+    def self.mount_endpoint endpoint, resource
+      resource = "/#{resource}" if resource
+
+      "#{endpoint}#{resource}"
     end
   end
 end

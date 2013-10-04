@@ -1,0 +1,118 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/search/movie?api_key=50abc7aa03af3809839b4a09deb279c8&query=fight%20club
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=3600
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Fri, 04 Oct 2013 03:41:22 GMT
+      Etag:
+      - '"81771373d6a04807b85fd68ff9912821"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Memc:
+      - HIT
+      X-Memc-Age:
+      - '1720'
+      X-Memc-Expires:
+      - '1880'
+      X-Memc-Key:
+      - dc50e7b10d9182eb063c39388443fceb
+      X-Varnish:
+      - '1751908760'
+      X-Varnish-Sid:
+      - tm-v-p-1100
+      Content-Length:
+      - '2609'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJwYWdlIjoxLCJyZXN1bHRzIjpbeyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9w
+        X3BhdGgiOiIvOHVPMGdVTThhTnFZTHMxT3NUQlFpWHUwZkV2LmpwZyIsImlk
+        Ijo1NTAsIm9yaWdpbmFsX3RpdGxlIjoiRmlnaHQgQ2x1YiIsInJlbGVhc2Vf
+        ZGF0ZSI6IjE5OTktMTAtMTQiLCJwb3N0ZXJfcGF0aCI6Ii8ybEVDcGkzNUhu
+        YnBhNHk0NkpYMGFZM0FXVHkuanBnIiwicG9wdWxhcml0eSI6MTMuNjMyNzA2
+        NjIwOTg5NSwidGl0bGUiOiJGaWdodCBDbHViIiwidm90ZV9hdmVyYWdlIjo3
+        LjUsInZvdGVfY291bnQiOjI2MTR9LHsiYWR1bHQiOmZhbHNlLCJiYWNrZHJv
+        cF9wYXRoIjpudWxsLCJpZCI6MjAxMzMxLCJvcmlnaW5hbF90aXRsZSI6IkZp
+        Z2h0IENsdWIiLCJyZWxlYXNlX2RhdGUiOiIiLCJwb3N0ZXJfcGF0aCI6bnVs
+        bCwicG9wdWxhcml0eSI6MC4yLCJ0aXRsZSI6IkZpZ2h0IENsdWIiLCJ2b3Rl
+        X2F2ZXJhZ2UiOjAuMCwidm90ZV9jb3VudCI6MH0seyJhZHVsdCI6ZmFsc2Us
+        ImJhY2tkcm9wX3BhdGgiOm51bGwsImlkIjoxNTE5MTIsIm9yaWdpbmFsX3Rp
+        dGxlIjoiSnVyYXNzaWMgRmlnaHQgQ2x1YiIsInJlbGVhc2VfZGF0ZSI6IiIs
+        InBvc3Rlcl9wYXRoIjpudWxsLCJwb3B1bGFyaXR5IjowLjQ2LCJ0aXRsZSI6
+        Ikp1cmFzc2ljIEZpZ2h0IENsdWIiLCJ2b3RlX2F2ZXJhZ2UiOjAuMCwidm90
+        ZV9jb3VudCI6MH0seyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIv
+        cXcyUWI0Mnh0eUUxQjQ0OUpvVGdiMW1WQ2UxLmpwZyIsImlkIjo1MTAyMSwi
+        b3JpZ2luYWxfdGl0bGUiOiJMdXJlOiBUZWVuIEZpZ2h0IENsdWIiLCJyZWxl
+        YXNlX2RhdGUiOiIyMDEwLTExLTE2IiwicG9zdGVyX3BhdGgiOiIvYVJUWDVZ
+        NTJ5R2JWTDZUR255STRFOGpqdHo0LmpwZyIsInBvcHVsYXJpdHkiOjAuMiwi
+        dGl0bGUiOiJMdXJlOiBUZWVuIEZpZ2h0IENsdWIiLCJ2b3RlX2F2ZXJhZ2Ui
+        OjAuMCwidm90ZV9jb3VudCI6MH0seyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9w
+        X3BhdGgiOm51bGwsImlkIjoyMDk1OTksIm9yaWdpbmFsX3RpdGxlIjoiQnJv
+        b2tseW4gR2lybHMgRmlnaHQgQ2x1YiIsInJlbGVhc2VfZGF0ZSI6IiIsInBv
+        c3Rlcl9wYXRoIjoiL2x1V3BQNVdTdzlKamJXUzFKNEJNbmpra0pDWC5qcGci
+        LCJwb3B1bGFyaXR5IjowLjIsInRpdGxlIjoiQnJvb2tseW4gR2lybHMgRmln
+        aHQgQ2x1YiIsInZvdGVfYXZlcmFnZSI6Ny4wLCJ2b3RlX2NvdW50IjoxfSx7
+        ImFkdWx0IjpmYWxzZSwiYmFja2Ryb3BfcGF0aCI6Ii9vd0N4eDZWT3dLd1I5
+        cXloNWc4SXRHb2I0R3guanBnIiwiaWQiOjE3Nzg5Miwib3JpZ2luYWxfdGl0
+        bGUiOiJDb21lZHkgRmlnaHQgQ2x1YiIsInJlbGVhc2VfZGF0ZSI6IiIsInBv
+        c3Rlcl9wYXRoIjoiL2tGWlhMVGtPRWl2U2hZZW1nUkFaenM4Sm9KSC5qcGci
+        LCJwb3B1bGFyaXR5IjowLjIsInRpdGxlIjoiQ29tZWR5IEZpZ2h0IENsdWIi
+        LCJ2b3RlX2F2ZXJhZ2UiOjAuMCwidm90ZV9jb3VudCI6MH0seyJhZHVsdCI6
+        ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvdGNvQUd2VG85NlI3WTlaR1ZDQ3o3
+        Qlp2cnZiLmpwZyIsImlkIjoxMDQ3ODIsIm9yaWdpbmFsX3RpdGxlIjoiRmxv
+        cmVuY2UgRmlnaHQgQ2x1YiIsInJlbGVhc2VfZGF0ZSI6IjIwMTAtMDEtMDEi
+        LCJwb3N0ZXJfcGF0aCI6Ii9lUXFxdTBzclRZY2NsV3F5bHZncEx5VTg3aFYu
+        anBnIiwicG9wdWxhcml0eSI6MC4yLCJ0aXRsZSI6IkZsb3JlbmNlIEZpZ2h0
+        IENsdWIiLCJ2b3RlX2F2ZXJhZ2UiOjAuMCwidm90ZV9jb3VudCI6MH0seyJh
+        ZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOm51bGwsImlkIjoxMTU1ODQs
+        Im9yaWdpbmFsX3RpdGxlIjoiRmlnaHQgQ2x1YiDigJMgVGhlIOKAnEkgYW0g
+        SmFja+KAmXMgTGFyeW5naXRpc+KAnSBFZGl0IiwicmVsZWFzZV9kYXRlIjoi
+        IiwicG9zdGVyX3BhdGgiOm51bGwsInBvcHVsYXJpdHkiOjAuMiwidGl0bGUi
+        OiJGaWdodCBDbHViIOKAkyBUaGUg4oCcSSBhbSBKYWNr4oCZcyBMYXJ5bmdp
+        dGlz4oCdIEVkaXQiLCJ2b3RlX2F2ZXJhZ2UiOjAuMCwidm90ZV9jb3VudCI6
+        MH0seyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvNVowRlNjQTFi
+        QjZFYmRHbVpDVUJlVWszMmVWLmpwZyIsImlkIjoxNDQ3Niwib3JpZ2luYWxf
+        dGl0bGUiOiJDbHViYmVkIiwicmVsZWFzZV9kYXRlIjoiMjAwOS0wMS0xNiIs
+        InBvc3Rlcl9wYXRoIjoiL21HUjcxTjE4YmgyNnV3dEFZWnVpS09jNzltOS5q
+        cGciLCJwb3B1bGFyaXR5IjoyLjgxODM0MTYzMjQ3Njk5LCJ0aXRsZSI6IkNs
+        dWJiZWQiLCJ2b3RlX2F2ZXJhZ2UiOjguMywidm90ZV9jb3VudCI6OH0seyJh
+        ZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvc2xEdkJzM2puMEMwOHZ1
+        eXZMSmtpa1VONnF1LmpwZyIsImlkIjoyMTk4OTcsIm9yaWdpbmFsX3RpdGxl
+        IjoiQmFycmlvIEJyYXdsZXIiLCJyZWxlYXNlX2RhdGUiOiIyMDEzLTA4LTI3
+        IiwicG9zdGVyX3BhdGgiOiIvOEF5Q0ZsdzFkODU2VUFBTjIxZm5XT3BRdTRs
+        LmpwZyIsInBvcHVsYXJpdHkiOjAuMDQwMzA2ODg2NTU3MDgxMiwidGl0bGUi
+        OiJCYXJyaW8gQnJhd2xlciIsInZvdGVfYXZlcmFnZSI6My4wLCJ2b3RlX2Nv
+        dW50IjoyfV0sInRvdGFsX3BhZ2VzIjoxLCJ0b3RhbF9yZXN1bHRzIjoxMH0=
+    http_version: 
+  recorded_at: Fri, 04 Oct 2013 03:41:24 GMT
+recorded_with: VCR 2.6.0
