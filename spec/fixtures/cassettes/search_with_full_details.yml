@@ -1,0 +1,127 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/movie/550?api_key=50abc7aa03af3809839b4a09deb279c8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=86402
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Fri, 04 Oct 2013 14:15:33 GMT
+      Etag:
+      - '"e37235dc5dd92f449fc4df74da621a50"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Memc:
+      - HIT
+      X-Memc-Age:
+      - '77808'
+      X-Memc-Expires:
+      - '8594'
+      X-Memc-Key:
+      - f5d8d6d123f674ea3be4bd53fba9acb2
+      X-Varnish:
+      - '1764678599'
+      X-Varnish-Sid:
+      - tm-v-p-1100
+      Content-Length:
+      - '1202'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"adult":false,"backdrop_path":"/8uO0gUM8aNqYLs1OsTBQiXu0fEv.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":28,"name":"Action"},{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"}],"homepage":"","id":550,"imdb_id":"tt0137523","original_title":"Fight
+        Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
+        channel primal male aggression into a shocking new form of therapy. Their
+        concept catches on, with underground \"fight clubs\" forming in every town,
+        until an eccentric gets in the way and ignites an out-of-control spiral toward
+        oblivion.","popularity":8.77568873663166,"poster_path":"/2lECpi35Hnbpa4y46JX0aY3AWTy.jpg","production_companies":[{"name":"20th
+        Century Fox","id":25},{"name":"Fox 2000 Pictures","id":711},{"name":"Regency
+        Enterprises","id":508}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
+        States of America"}],"release_date":"1999-10-14","revenue":100853753,"runtime":139,"spoken_languages":[{"iso_639_1":"en","name":"English"}],"status":"Released","tagline":"How
+        much can you know about yourself if you''ve never been in a fight?","title":"Fight
+        Club","vote_average":7.5,"vote_count":2613}'
+    http_version: 
+  recorded_at: Fri, 04 Oct 2013 14:15:33 GMT
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/movie/151912?api_key=50abc7aa03af3809839b4a09deb279c8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=86402
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Fri, 04 Oct 2013 14:15:33 GMT
+      Etag:
+      - '"cd1cdf689dec51122b0ca6928f057c51"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Memc:
+      - HIT
+      X-Memc-Age:
+      - '41284'
+      X-Memc-Expires:
+      - '45118'
+      X-Memc-Key:
+      - 0223ea64e4351132ce645d03499f72a8
+      X-Varnish:
+      - '1764678707'
+      X-Varnish-Sid:
+      - tm-v-p-1100
+      Content-Length:
+      - '445'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"adult":false,"backdrop_path":null,"belongs_to_collection":null,"budget":0,"genres":[],"homepage":null,"id":151912,"imdb_id":"tt1258908","original_title":"Jurassic
+        Fight Club","overview":null,"popularity":0.46,"poster_path":null,"production_companies":[],"production_countries":[],"release_date":"","revenue":0,"runtime":0,"spoken_languages":[],"status":"Released","tagline":null,"title":"Jurassic
+        Fight Club","vote_average":0.0,"vote_count":0}'
+    http_version: 
+  recorded_at: Fri, 04 Oct 2013 14:15:33 GMT
+recorded_with: VCR 2.6.0

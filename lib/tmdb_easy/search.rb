@@ -14,8 +14,8 @@ module TmdbEasy
       @@endpoint ||= name.split('::').last.downcase
     end
 
-    def self.fetch terms, resource_endpoint
-      attributes = Base.fetch "#{endpoint}/#{resource_endpoint}", query: terms
+    def self.fetch terms, resource_type
+      attributes = Base.fetch "#{endpoint}/#{resource_type}", query: terms
       new attributes
     end
   end

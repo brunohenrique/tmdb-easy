@@ -4,11 +4,13 @@ describe TmdbEasy::Search do
   before { TmdbEasy::Base.api_key tmdb_api_key }
 
   describe 'mounts endpoint by resource type' do
-    subject(:search) { TmdbEasy::Movie.search terms }
+    subject(:search) { TmdbEasy::Search.fetch terms, resource_type }
 
     let(:terms) { 'fight club' }
 
     context 'when resource type is movie' do
+      let(:resource_type) { 'movie' }
+
       it 'calls Base.fetch with right endpoint and terms (search/movie)' do
         TmdbEasy::Base.should_receive(:fetch).with('search/movie', { query: terms })
         search

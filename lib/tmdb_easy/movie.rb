@@ -20,7 +20,11 @@ module TmdbEasy
     end
 
     def self.search terms
-      Search.fetch terms, endpoint
+      search_results = Search.fetch(terms, endpoint).results
+
+      search_results.map do |result|
+        find result['id']
+      end
     end
   end
 end
