@@ -1,6 +1,5 @@
 Manifest
 pkg
-Gemfile.lock
 *.swp
 **/*.swp
 *.gem
