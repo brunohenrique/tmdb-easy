@@ -1,5 +1,6 @@
 require_relative '../lib/tmdb_easy'
 
+require 'pry-byebug'
 require 'rspec'
 require 'vcr'
 
@@ -11,5 +12,3 @@ end
 def tmdb_api_key
   '50abc7aa03af3809839b4a09deb279c8'
 end
-
-

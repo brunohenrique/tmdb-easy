@@ -10,11 +10,11 @@ module TmdbEasy
       @@config ||= {}
     end
 
-    def self.api_key api_key
-      self.config[:api_key] = api_key
+    def self.api_key(api_key)
+      config[:api_key] = api_key
     end
 
-    def self.fetch endpoint, options = {}
+    def self.fetch(endpoint, options = {})
       resource = options.delete :resource
       params = config.merge(options)
 
@@ -23,7 +23,7 @@ module TmdbEasy
 
     private
 
-    def self.mount_endpoint endpoint, resource
+    def self.mount_endpoint(endpoint, resource)
       resource = "/#{resource}" if resource
 
       "#{endpoint}#{resource}"
